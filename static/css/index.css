@@ -51,8 +51,8 @@ body{
 
 .carousel .carousel-item img {
     width: 100%;
+    height: 650px;
 
-    height: 500px;
 }
 
 /* Navigation control styles */
@@ -84,18 +84,6 @@ body{
     margin-right: 20px;  /* prevent next button from touching the side*/
 }
 
-.carousel-dots {
-    text-align: center;
-}
-
-.dot {
-    opacity: 0.7; /* gray out dots for slides not being visted */
-}
-
-.dot:focus {
-    border: 1px solid black; /* dot for currently visited slide */
-}
-
 /* hanlde smooth transitions between slides */
 @keyframes fadeVisibility {
     0% {
@@ -104,4 +92,77 @@ body{
     100% {
         opacity: 1;
     }
+}
+
+.popular-themes-block{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.popular-themes-text{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-left: 30px;
+}
+
+.popular-themes{
+
+    width: 100%;
+    height: 620px;
+    background-color: aqua;
+
+}
+
+.top-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bottom-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fig1 {
+    width: 60%;
+    height: 300px;
+    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
+
+}
+
+.fig2 {
+    width: 40%;
+    height: 300px;
+    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
+    margin-left: 20px;
+}
+
+.fig3{
+    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
+
+}
+
+.fig4{
+    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
+
+}
+
+.fig5{
+    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
+
+}
+
+.fig3, .fig4, .fig5{
+    height: 300px;
+    width: 33%;
+}
+
+.fig1, .fig2, .fig3, .fig4, .fig5{
+    background-size: 100% 100%;
+    transition: all 300ms;
+}
+
+.fig1:hover, .fig2:hover, .fig3:hover, .fig4:hover, .fig5:hover{
+    transform: scale(1.05);
 }
