@@ -1,34 +1,33 @@
-body{
-    height: 100%;
-}
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.nav-wrapper{
-    width: 100%;
-    height: 50px;
+
+nav{
     background-color: bisque;
-}
-
-.themes{
-    height: inherit;
+    min-height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    list-style: none;
 }
 
-.themes-blocks{
-    padding-right: 70px;
-
+.nav-container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: black;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.themes-blocks a{
+a{
     text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 2px;
+    font-size: 25px;
 }
 
 
@@ -45,8 +44,9 @@ body{
 }
 
 .carousel .carousel-item-visible {
-    display: block; /* show current slide image */
+    display: flex; /* show current slide image */
     animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+
 }
 
 .carousel .carousel-item img {
@@ -94,75 +94,97 @@ body{
     }
 }
 
-.popular-themes-block{
-    margin-left: 60px;
-    margin-right: 60px;
+
+section{
+    min-height: 600px;
+
 }
 
-.popular-themes-text{
-    padding-top: 50px;
-    padding-bottom: 40px;
-    margin-left: 30px;
+.themes-container{
+    background-color: coral;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.popular-themes{
 
+.fig1 img, .fig2 img{
+    height: 300px;
     width: 100%;
-    height: 620px;
-    background-color: aqua;
-
-}
-
-.top-items{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.bottom-items{
-    display: flex;
-    justify-content: space-between;
 }
 
 .fig1 {
     width: 60%;
-    height: 300px;
-    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
-
 }
 
 .fig2 {
-    width: 40%;
-    height: 300px;
-    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
-    margin-left: 20px;
+    width: 39%;
 }
 
-.fig3{
-    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
-
-}
-
-.fig4{
-    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
-
-}
-
-.fig5{
-    background-image: url("https://media.istockphoto.com/photos/used-brushes-on-an-artists-palette-of-colorful-oil-paint-picture-id636761588?b=1&k=20&m=636761588&s=612x612&w=0&h=mlriGcG0LszeBR13BhAqCaRNgaAH2je1SaY4MMyitnw=");
-
-}
 
 .fig3, .fig4, .fig5{
-    height: 300px;
     width: 33%;
 }
 
-.fig1, .fig2, .fig3, .fig4, .fig5{
-    background-size: 100% 100%;
-    transition: all 300ms;
+.fig3 img, .fig4 img, .fig5 img{
+    height: 292px;
+    width: 100%;
 }
 
-.fig1:hover, .fig2:hover, .fig3:hover, .fig4:hover, .fig5:hover{
-    transform: scale(1.05);
+
+
+/*.fig1, .fig2, .fig3, .fig4, .fig5{*/
+/*    transition: all 300ms;*/
+/*}*/
+
+/*.fig1:hover, .fig2:hover, .fig3:hover, .fig4:hover, .fig5:hover{*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+footer{
+    background-color: aquamarine;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container{
+    width: 1250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .nav-container{
+        gap: 12px;
+        justify-content: flex-start;
+    }
+
+
+    .carousel{
+       height: 300px;
+    }
+
+    .carousel .carousel-item img {
+
+        height: 300px;
+
+    }
+
+    .fig1, .fig2, .fig3, .fig4, .fig5{
+        width: 100%;
+    }
+
+
+
+
+
 }
