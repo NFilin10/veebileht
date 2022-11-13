@@ -5,8 +5,8 @@
 }
 
 
-nav{
-    background-color: bisque;
+.themes-nav{
+
     min-height: 60px;
     display: flex;
     align-items: center;
@@ -15,22 +15,36 @@ nav{
 .nav-container{
     width: 1000px;
     margin: 0 auto;
-    background-color: black;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a{
+.nav-container a{
+    margin-top: 28px;
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
-    border: solid 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1.5px solid rgb(153, 153, 153);
     font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(51, 51, 51);
 }
 
+.heading{
+    max-width: 1250px;
+    margin: 0 auto;
+}
 
+.heading h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top:20px;
+    font-size: 35px;
+}
 
 .carousel {
     max-width: 100%;
@@ -96,17 +110,19 @@ a{
 
 
 section{
+    margin-top: 15px;
     min-height: 600px;
+    margin-bottom: 10px;
 
 }
 
 .themes-container{
-    background-color: coral;
+
     max-width: 1250px;
 
     margin: 0 auto;
 
-
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -119,20 +135,24 @@ section{
 }
 
 .fig1 {
-    width: 60%;
+    width: 58%;
+    height: 300px;
 }
 
 .fig2 {
     width: 39%;
+    height: 300px;
 }
 
 
 .fig3, .fig4, .fig5{
-    width: 33%;
+    width: 32%;
+    height: 300px;
+
 }
 
 .fig3 img, .fig4 img, .fig5 img{
-    height: 292px;
+    height: 100%;
     width: 100%;
 }
 
@@ -146,21 +166,6 @@ section{
     transform: scale(1.05);
 }
 
-footer{
-    background-color: aquamarine;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.footer-container{
-    width: 1250px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 @media (max-width: 700px) {
     .nav-container{

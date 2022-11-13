@@ -1,0 +1,20 @@
+footer{
+    background-color: #202020;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container{
+    width: 1250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h5{
+    color: white;
+    opacity: 0.8;
+}
