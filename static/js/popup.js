@@ -1,24 +1,30 @@
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var popupsToggle = document.querySelectorAll('.open-popup'), popupClose = document.querySelectorAll('.close');
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+popupsToggle.forEach(function(item){
+    item.addEventListener("click", function () {
+        var popupName = item.getAttribute('data-popup')
+        document.getElementById(popupName).style.display = "block"
+    })
+})
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+popupClose.forEach(function(item){
+    item.addEventListener("click", function () {
+        var popup = item.closest('.modal')
+        popup.style.display = "none"
+    })
+})
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
     }
 }
+
+window.addEventListener('touchstart', function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+    }
+})
+
+
