@@ -138,13 +138,13 @@ section{
 
 
 
-/*.fig1, .fig2, .fig3, .fig4, .fig5{*/
-/*    transition: all 300ms;*/
-/*}*/
+.fig1, .fig2, .fig3, .fig4, .fig5{
+    transition: all 300ms;
+}
 
-/*.fig1:hover, .fig2:hover, .fig3:hover, .fig4:hover, .fig5:hover{*/
-/*    transform: scale(1.05);*/
-/*}*/
+.fig1:hover, .fig2:hover, .fig3:hover, .fig4:hover, .fig5:hover{
+    transform: scale(1.05);
+}
 
 footer{
     background-color: aquamarine;

@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.themes-block{
+    min-height: 600px;
+    background-color: aqua;
+
+}
+
+.container{
+    background-color: coral;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.elem img{
+    height: 300px;
+    width: 100%;
+}
+
+.elem{
+    width: 49.4%;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .elem {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1248px) and (min-width: 701px){
+    .elem{
+        width: 48%;
+    }
+}
