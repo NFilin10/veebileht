@@ -5,7 +5,7 @@
 var el = document.getElementById("fig1")
 if (el!=null){
     el.onclick = function () {
-        window.location.href = 'themes.html';
+        window.location.href = "templates/themes.html";
     }
 }
 else {
