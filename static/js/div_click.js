@@ -1,27 +1,22 @@
 
 
+
+
 var el = document.getElementById("fig1")
-    if (el!=null){
-    el.onclick = function(){
-            // navigate to new page
-            if (el!= null){
-                console.log(10)
-                window.location.href = 'themes.html';
-
-            }
+if (el!=null){
+    el.onclick = function () {
+        window.location.href = 'themes.html';
     }
-
-
-
-
-
 }
+else {
+    var el1 =document.getElementById("popup6")
+    if (el1 != null){
+        document.getElementById("popup6").style.display = "block"
+        document.getElementById('blur1').style.filter = "blur(8px)"
+        document.getElementById('blur2').style.filter = "blur(8px)"
+        document.getElementById('blur3').style.filter = "blur(8px)"
 
-var el1 =document.getElementById("popup6")
-
-if (el1 != null){
-    document.getElementById("popup6").style.display = "block"
-
+    }
 }
 
 // document.getElementById("fig2").onclick = function(){
