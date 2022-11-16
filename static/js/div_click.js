@@ -1,0 +1,45 @@
+
+
+var el = document.getElementById("fig1")
+    if (el!=null){
+    el.onclick = function(){
+            // navigate to new page
+            if (el!= null){
+                console.log(10)
+                window.location.href = 'themes.html';
+
+            }
+    }
+
+
+
+
+
+}
+
+var el1 =document.getElementById("popup6")
+
+if (el1 != null){
+    document.getElementById("popup6").style.display = "block"
+
+}
+
+// document.getElementById("fig2").onclick = function(){
+//     // navigate to new page
+//     window.location.href = 'themes.html';
+// }
+//
+// document.getElementById("fig3").onclick = function(){
+//     // navigate to new page
+//     window.location.href = 'themes.html';
+// }
+//
+// document.getElementById("fig4").onclick = function(){
+//     // navigate to new page
+//     window.location.href = 'themes.html';
+// }
+//
+// document.getElementById("fig5").onclick = function(){
+//     // navigate to new page
+//     window.location.href = 'themes.html';
+//}

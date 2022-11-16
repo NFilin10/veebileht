@@ -2,22 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 .themes-block{
+    margin-top: 30px;
     min-height: 600px;
-    background-color: aqua;
+    margin-bottom: 30px;
 
 }
 
 .container{
-    background-color: coral;
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
     position: relative;
 }
@@ -29,15 +30,44 @@
 }
 
 .elem{
-    width: 49.4%;
+    width: 48%;
 }
+
+.elem p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.open-popup{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    padding: 0 30px;
+    height: 40px;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #fff;
+    color: #696969;
+    box-shadow: 1px 4px 14px 0 rgb(93 93 93);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;}
+
+.open-popup:hover{
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 6px 20px rgb(93 93 93);
+}
+
+
+
 
 
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 85px; /* Location of the box */
+    padding-top: 75px; /* Location of the box */
     left: 0;
     top: 0;
     max-width: 100%; /* Full width */
@@ -77,15 +107,21 @@
 }
 
 
-/*.blur{*/
-/*    filter: blur(10px);*/
-/*}*/
-
 @media (max-width: 700px) {
     .elem {
+        display: flex;
         width: 100%;
+        margin-right: 10px;
+        margin-left: 10px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
+    .elem p{
+        margin-top: 10px;
+        font-size: 23px;
+    }
     .modal-content {
         width: 96%;
     }
@@ -94,6 +130,11 @@
         margin-top: 3px;
 
     }
+
+    .themes-block{
+        margin-top: 10px;
+    }
+
 }
 
 @media (max-width: 1248px) and (min-width: 701px){
@@ -101,3 +142,4 @@
         width: 48%;
     }
 }
+
