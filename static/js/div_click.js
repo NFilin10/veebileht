@@ -8,7 +8,7 @@ function popup(element, html, popup) {
         el.onclick = function () {
             localStorage.setItem("blur", "yes")
             localStorage.setItem("popup", popup)
-            window.location = '../templates/' + html;
+            window.location = 'templates/' + html;
         }
     }
 }
