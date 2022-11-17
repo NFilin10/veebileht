@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     display: flex;
     justify-content: flex-end;
@@ -28,7 +35,6 @@ header{
 
 .nav-links li a{
     transition: all 0.3s ease 0s;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: white;
     font-size: 20px;
