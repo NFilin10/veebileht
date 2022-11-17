@@ -1,6 +1,6 @@
 
-var el
 
+var el
 
 function popup(element, html, popup) {
     el = document.getElementById(element)
