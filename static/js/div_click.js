@@ -8,7 +8,7 @@ function popup(element, html, popup) {
         el.onclick = function () {
             localStorage.setItem("blur", "yes")
             localStorage.setItem("popup", popup)
-            document.location.href = '../sport.html';
+            document.location.href = '/';
         }
     }
 }
