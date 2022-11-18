@@ -1,5 +1,3 @@
-
-
 var el
 
 function popup(element, html, popup) {

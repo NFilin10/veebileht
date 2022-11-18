@@ -5,47 +5,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-.themes-nav{
-
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.nav-container{
-    padding-left: 10px;
-    padding-right: 10px ;
-    width:950px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-container a{
-    min-width: 170px;
-    margin-top: 30px;
-    text-decoration: none;
-    padding: 5px 10px 5px 10px;
-    border: 1.5px solid rgb(153, 153, 153);
-    font-size: 23px;
-    color: rgb(51, 51, 51);
-    text-align: center;
-}
-
-.heading{
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-.heading h1 {
-    font-weight: bold;
-    margin-top:20px;
-    font-size: 35px;
-}
-
 .carousel {
     max-width: 100%;
     position: relative;
@@ -60,14 +19,11 @@
 .carousel .carousel-item-visible {
     display: flex; /* show current slide image */
     animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
-
 }
 
 .carousel .carousel-item img {
     width: 100%;
     height: 650px;
-
-
 }
 
 /* Navigation control styles */
@@ -109,6 +65,44 @@
     }
 }
 
+.themes-nav{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container{
+    padding-left: 10px;
+    padding-right: 10px ;
+    width:950px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container a{
+    min-width: 170px;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 1.5px solid rgb(153, 153, 153);
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+.heading{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.heading h1 {
+    font-weight: bold;
+    margin-top:20px;
+    font-size: 35px;
+}
 
 section{
     margin-top: 15px;
@@ -117,18 +111,14 @@ section{
 
 }
 
-.themes-container{
-
+.section-container{
     max-width: 1250px;
-
     margin: 0 auto;
-
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 
 .fig1 img, .fig2 img{
     object-fit: cover;
@@ -158,9 +148,6 @@ section{
     width: 100%;
 }
 
-
-
-
 .fig1, .fig2, .fig3, .fig4, .fig5{
     position: relative;
     transition: all 300ms;
@@ -188,22 +175,21 @@ section{
 }
 
 @media (max-width: 700px) {
+    .carousel{
+       height: 300px;
+    }
 
+    .carousel .carousel-item img {
+        height: 300px;
+    }
 
     .nav-container{
         gap: 12px;
         justify-content: center;
     }
 
-
-    .carousel{
-       height: 300px;
-    }
-
-    .carousel .carousel-item img {
-
-        height: 300px;
-
+    .heading{
+        margin-left: 10px;
     }
 
     .fig1, .fig2, .fig3, .fig4, .fig5{
@@ -223,10 +209,6 @@ section{
 
     .fig1 img:hover, .fig2 img:hover, .fig3 img:hover, .fig4 img:hover, .fig5 img:hover{
         opacity: 0.8;
-    }
-
-    .heading{
-        margin-left: 10px;
     }
 
     .fig1 p, .fig2 p, .fig3 p, .fig4 p, .fig5 p{
