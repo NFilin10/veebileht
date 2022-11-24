@@ -5,11 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 .container{
-    max-width: 1350px;
+    max-width: 1100px;
     margin:0 auto;
     display: flex;
     height: 100%;
     margin-top: 60px;
+    flex-wrap: wrap;
 }
 .tekst{
     width: 40%;
@@ -38,19 +39,20 @@ p{
 }
 
 .kirjeldus1{
-    width: 600px;
+    width: 500px;
     margin-top: 20px;
     text-align: justify;
 }
 
 h2{
-    margin-top: 100px;
+    margin-top: 75px;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 h1{
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-left: 100px;
     border-top: solid 5px #202020;
     width: 50px;
     padding-top: 20px;
@@ -105,17 +107,6 @@ header{
     color: #0088a9
 }
 
-
-@media (max-width: 700px) {
-
-    header{
-        height: 10px;
-    }
-    .nav-links li a {
-        font-size: 15px;
-    }
-}
-
 /*footer*/
 
 footer{
@@ -123,9 +114,10 @@ footer{
     min-height: 60px;
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 100px;
 }
 
 .footer-container{
@@ -146,5 +138,15 @@ h5{
     .footer-container div h5{
         margin-left: 15px;
         margin-right: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    header{
+        height: 10px;
+    }
+    .nav-links li a {
+        font-size: 15px;
     }
 }
