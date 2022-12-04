@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7197549d-45d1-483e-be8e-e13fc52304b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/about_pg.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about_pg.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
