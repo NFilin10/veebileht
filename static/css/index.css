@@ -102,7 +102,9 @@ body{
 
 .heading{
     max-width: 1250px;
+    width: 100%;
     margin: 0 auto;
+    align-items: flex-start;
 }
 
 .heading h1 {
@@ -111,7 +113,7 @@ body{
     font-size: 35px;
 }
 
-section{
+.section{
     margin-top: 15px;
     min-height: 600px;
     margin-bottom: 10px;

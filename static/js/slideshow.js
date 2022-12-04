@@ -1,12 +1,14 @@
+
+//Allikas: https://dev.to/coderjay06/how-to-build-a-carousel-from-scratch-531c
+
 const slides = document.getElementsByClassName("carousel-item");
 const nextButton = document.getElementById("carousel-button-next");
 const prevButton = document.getElementById("carousel-button-prev");
-const dots = document.getElementsByClassName("dot");
 let position = 0;
 const numberOfSlides = slides.length;
 
 function hideAllSlides() {
-    // remove all slides not currently being viewed
+    //eemaldatud kõik slaidid, mida praegu ei vaadata
     for (const slide of slides) {
         slide.classList.remove("carousel-item-visible");
         slide.classList.add("carousel-item-hidden");
@@ -17,39 +19,31 @@ function hideAllSlides() {
 const handleMoveToNextSlide = function(e) {
     hideAllSlides();
 
-    // check if last slide has been reached
+    //kontrollib, kas viimane slaid on näidatud
     if (position === numberOfSlides - 1) {
-        position = 0; // go back to first slide
+        position = 0; // läheb tagasi esimese slaidi juurde
     } else {
-        // move to next slide
+        //liigub järgmise slaidile
         position++;
     }
-    // make current slide visible
+    //muudab praegust slaidi nähtavaks
     slides[position].classList.add("carousel-item-visible");
-
-    // update dot to represent current slide
-    dots[position].classList.add("selected-dot");
-    dots[position].checked = true;
 }
 
 const handleMoveToPrevSlide = function(e) {
     hideAllSlides();
 
-    // check if we're on the first slide
+    //kontrollib kas oleme praegu esimesel slaidil
     if (position === 0) {
-        position = numberOfSlides - 1; // move to the last slide
+        position = numberOfSlides - 1; //liigub viimase slaidi juurde
     } else {
-        // move back one
+        //liigub tagasi
         position--;
     }
-    // make current slide visible
+    //muudab praegust slaidi nähtavaks
     slides[position].classList.add("carousel-item-visible");
-
-    // update dot to represent current slide
-    dots[position].classList.add("selected-dot");
-    dots[position].checked = true;
 }
 
-// listen for slide change events
+//kontrollib nuppu vajutamist
 nextButton.addEventListener("click", handleMoveToNextSlide);
 prevButton.addEventListener("click", handleMoveToPrevSlide);

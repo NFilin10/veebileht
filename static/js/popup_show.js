@@ -1,7 +1,9 @@
+
+//Autor: Nikita Filin
 var popup
 var el1
 
-
+//Funktsioon kontrollib, kas ajutises andmebaasis on midagi või ei ole. Kui on, siis see tähendab, et on vaja näidata popupi
 if (localStorage.getItem("blur")) {
     popup = localStorage.getItem("popup")
 
