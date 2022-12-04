@@ -19,13 +19,13 @@ body{
 
 .carousel .carousel-item,
 .carousel .carousel-item-hidden {
-    display: none; /* hide all slide images not currently being viewed */
+    display: none;
 }
 
 .carousel .carousel-item-visible {
-    display: flex; /* show current slide image */
+    display: flex;
     width: 100%;
-    animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+    animation: fadeVisibility 0.5s;
 }
 
 .carousel .carousel-item img {
@@ -33,14 +33,14 @@ body{
     height: 650px;
 }
 
-/* Navigation control styles */
+
 .carousel .carousel-actions {
     display: flex;
     width: 100%;
-    justify-content: space-between; /* put space between the navigation buttons */
-    position: absolute; /* position navigation buttons on top */
-    top: 50%; /* center navigation buttons on the slide */
-    transform: translateY(-50%); /* align navigation buttons */
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .carousel .carousel-actions button {
@@ -55,14 +55,14 @@ body{
 }
 
 .carousel .carousel-actions button#carousel-button-prev {
-    margin-left: 20px; /* prevent previous button from touching the side*/
+    margin-left: 20px;
 }
 
 .carousel .carousel-actions button#carousel-button-next {
-    margin-right: 20px;  /* prevent next button from touching the side*/
+    margin-right: 20px;
 }
 
-/* hanlde smooth transitions between slides */
+
 @keyframes fadeVisibility {
     0% {
         opacity: 0;
@@ -164,6 +164,7 @@ body{
 
 .fig1:hover, .fig2:hover, .fig3:hover, .fig4:hover, .fig5:hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .fig1 p, .fig2 p, .fig3 p, .fig4 p, .fig5 p{
