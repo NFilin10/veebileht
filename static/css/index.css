@@ -128,7 +128,7 @@ section{
 }
 
 .fig1 img, .fig2 img{
-    object-fit: cover;
+
     height: 300px;
     width: 100%;
 }
@@ -168,7 +168,12 @@ section{
     position: absolute;
     bottom: 8px;
     left: 16px;
-    font-size: 25px;
+    font-size: 20px;
+    border-radius:4px;
+    padding:4px;
+    margin:2px;
+    background-color: #D3D3D3;
+    opacity: .7;
 
 }
 
@@ -197,6 +202,10 @@ section{
 
     .heading{
         margin-left: 10px;
+    }
+
+    .heading h1{
+        font-size: 25px;
     }
 
     .fig1, .fig2, .fig3, .fig4, .fig5{
