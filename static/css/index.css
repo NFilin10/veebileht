@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    /*overflow-x: hidden;*/
 }
 
 .carousel {
@@ -102,12 +103,11 @@ body{
 
 .heading{
     max-width: 1250px;
-    width: 100%;
     margin: 0 auto;
-    align-items: flex-start;
 }
 
 .heading h1 {
+    max-width: 1250px;
     font-weight: bold;
     margin-top:20px;
     font-size: 35px;
